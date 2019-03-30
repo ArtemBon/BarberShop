@@ -109,11 +109,8 @@ post '/visit' do
 		barber,
 		color
 	)values(?, ?, ?, ?, ?)', [@username, @phone, @date_time, @barber, @color]
-	
 
-	@message_visit = 'Спасибо, что записались. Мы Вас ждем!'
-
-	erb :visit
+	erb "<h2>Спасибо, вы записались!</h2>"
 
 end
 
